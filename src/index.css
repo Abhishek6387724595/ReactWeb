@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*@import url('<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">');*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    /*overflow-x:hidden;*/
+}
+.navbar{
+    background-color: #fff!important;
+}
+.navbar-brand{
+    font-size: 2.5rem!important;
+    color: #565387!important;
+}
+.navbar a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.navbar a:hover{
+    color:#3498db!important;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+}
+.menu_active{
+    font-weight: bold;
+    border-bottom:  #565387;
+}
+#header{
+    width: 90%;
+    height: 80vh;
+    margin-top: 70px;
+}
+#header .brand-name{
+    color:#3498db;  
+}
+#header h1{
+    margin:0 0 10px 0;
+    color:black;
+    letter-spacing: 0.5px;
+}
+#header .btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #3498db;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#header .btn-get-started:hover{
+    background: #3498db;
+    color:white;
+    border:2px solid white;
+}
+.header-img{
+    text-align: left;
+}
+.animated{
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+
 }
+.inner{
+    overflow:hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform:scale(1.2);
+}
+.footer_style{
+    margin-bottom:0!important;
+}
+/*
+div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding:12px 20px;
+    background:#9b59b6;
+    color:white;
+    border:2px solid #ecf0f1;
+    outline:none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}*/
